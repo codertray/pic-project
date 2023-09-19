@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <title>favorite photos</title>
+        <link rel="stylesheet" href="style.css"
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inclusive+Sans&family=M+PLUS+Rounded+1c:wght@800&display=swap" rel="stylesheet">
+        <style>
+            #container{
+                display: flex;
+                flex-direction: column;
+                height: 100vh;
+                align-items: center;
+            }
+            #title{
+                width: 1210px;
+                aspect-ratio: 16/9;
+                background-color: transparent;
+                background-image: url("assets/title.jpeg");
+                background-size: contain;
+                color: antiquewhite;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 5px;
+            }
+            h1{
+                font-size: 5rem;
+            }
+            #images{
+                display: grid;
+                width: fit-content;
+                grid-template-rows: 1fr 1fr;
+                grid-template-columns: 1fr 1fr 1fr;
+                gap: 5px;
+            }
+            img{
+                width: 400px;
+                height: 400px;
+                margin: 0px;
+            }
+            @media (min-width: 721px) and (max-width: 1280px){
+                #title{
+                    width: 805px;
+                }
+                h1{
+                    font-size: 3rem;
+                }
+                #images{
+                    grid-template-columns: 1fr 1fr;
+                    grid-template-rows: 1fr 1fr 1fr;
+                }
+                img{
+                    aspect-ratio: 1/1;
+                }
+            }
+            @media (max-width: 720px){
+                #title{
+                    width: 485px;
+                }
+                h1{
+                    font-size: 2rem;
+                }
+                #images{
+                    grid-template-columns: 1fr 1fr;
+                    grid-template-rows: 1fr 1fr 1fr;
+                }
+                img{
+                    width: 240px;
+                    height: 240px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div id="container">
+            <div id="title">
+                <h1>my favorite photos</h1>
+            </div>
+            <div id="images">
+                <a href="sub/circle.html"><img src="assets/circle.jpeg"/></a>
+                <a href="sub/river.html"><img src="assets/river.jpeg"/></a>
+                <a href="sub/moon.html"><img src="assets/moon.jpeg"/></a>
+                <a href="sub/ice.html"><img src="assets/ice.jpeg"/></a>
+                <a href="sub/color.html"><img src="assets/color.jpeg"/></a>
+                <a href="sub/tree.html"><img src="assets/tree.jpg"/></a>
+            </div>
+            <div class="footer">
+                <ul>
+                    <li><a href="footer/contact.html">Contact Me</a></li>
+                    <li><a href="https://www.codertray.github.io">My projects</a></li>
+                    <li>copyright: CreatorTray; all rights reserved</li>
+                </ul>
+            </div>
+        </div>
+    </body>
+</html>

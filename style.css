@@ -1,0 +1,51 @@
+body{
+    margin: 12pt 16px;
+}
+*{
+    font-size: 16pt;
+    font-family: 'Inclusive Sans', sans-serif;
+}
+h1{
+    font-size: 2rem;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    text-align: center;
+    clear: both;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.article{
+    width: 1280px;
+}
+ul{
+    list-style: none;
+}
+img{
+    float: left;
+    height: 400px;
+    width: 600px;
+    padding: 10px;
+}
+.footer{
+    margin-top: 10px
+}
+.footer ul{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    clear: both;
+    flex-wrap: wrap;
+}
+@media (max-width: 1280px) {
+    .article{
+        width: auto;
+    }
+}
+@media (max-width:480px) {
+    img{
+        width: 360px;
+        height: 240px;
+    }
+}
